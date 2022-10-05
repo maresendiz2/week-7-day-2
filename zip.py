@@ -1,18 +1,18 @@
-def zip():
+def zip1():
   # zip
   # Notice the format enumerate actually returns, let's take a look by transforming it to a list()
   # list(enumerate('abcde'))
-  print("zip")
+  # print("zip")
   
   
   # It was a list of tuples, meaning we could use tuple unpacking during our for loop. This data structure is actually very common in Python , especially when working with outside libraries. You can use the zip() function to quickly create a list of tuples by "zipping" up together two lists.
   
   
-  mylist1 = [1,2,3,4,5]
-  mylist2 = ['a','b','c','d','e']
+  # mylist1 = [1,2,3,4,5]
+  # mylist2 = ['a','b','c','d','e']
   
   # This one is also a generator! We will explain this later, but for now let's transform it to a list
-  zip(mylist1,mylist2)
+  # print(list(zip(mylist1,mylist2)))
   
   
   # list(zip(mylist1,mylist2))
@@ -54,14 +54,16 @@ def zip():
   
   # capitals = ["Berlin", "Tokyo", "Paris", "Helsinki", "Ottawa", "Canberra"]
   # countries = ["Germany", "Japan", "France", "Finland", "Canada", "Australia"]
-  
+  # for capital,country in list(zip(capitals,countries)):
+  #   print(f"the capital of {country} is {capital}")
   
   
   # Zip Practice #2
   # Create a zip object made up of lists, of a set of brands and products that you prefer, inside the my_zip variable.
-  # brands =
-  # products =
-  
+  brands = ["Google", "Apple", "Samsung"]
+  products = ["Google Pixel", "iPhone", "Android Phone"]
+  my_zip = list(zip(brands, products))
+  print(my_zip)
   
   # Zip Practice #3
   # Create a zip object with the translations of the numbers from 1 to 5 in Spanish, Portuguese and English (in that same order), and then convert the generated object into a list called numbers:
